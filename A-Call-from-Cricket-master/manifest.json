@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "A Call from Cricket",
+  "description": "Want to get notified when your favourite player comes on the field? Here's a simple notification extension",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "background": {
+    "page": "runGame.html",
+    "persistent": false
+  },
+
+  "permissions": ["tabs","activeTab","storage", "notifications"],
+  "content_security_policy": "script-src 'self' https://query.yahooapis.com; object-src 'self'"
+
+}
